@@ -19,6 +19,7 @@ public class Main {
         int in1 = 1;
         int in2 = 1;
         int in3;
+
         for (int i = 3; i < limit; i++) {
             in3 = in1 + in2;
             System.out.print(in3  + " " );
