@@ -1,7 +1,13 @@
+import junitparams.JUnitParamsRunner;
+import junitparams.Parameters;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import java.math.BigInteger;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@RunWith(JUnitParamsRunner.class)
 public class MainTest {
 
     @Test
@@ -13,5 +19,17 @@ public class MainTest {
     public void testRecursionFactorial(){
         assertThat(Main.getFactorialR(5)).isEqualTo(120);
     }
+
+   @Test
+    @Parameters({
+            "5 | 120",
+            "6 | 720",
+            "1  | 1",
+            "2 | 2",
+            "0 | 1"
+    })
+public  void testGetFactorialStream(int number, int rezult){
+        assertThat(Main.getFactorialStream(number)).isEqualTo(rezult);
+   }
 
 }
