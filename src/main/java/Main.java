@@ -15,17 +15,25 @@ public class Main {
         return (in == 0 || in == 1) ? 1 : in * getFactorialR(--in);
     }
 
-    public  static void getNumberOfFibonacci(int limit) {
+    public  static int getNumberOfFibonacci(int number) {
         int in1 = 1;
         int in2 = 1;
-        int in3;
+        int in3 = 0;
+        if (number <= 0) {
+            return 0;
+        } else if (number == 1) {
+            return 1;
+        } else if (number == 2) {
+            return 1;
+        }
 
-        for (int i = 3; i < limit; i++) {
+        for (int i = 3; i < number; i++) {
             in3 = in1 + in2;
-            System.out.print(in3  + " " );
+//            System.out.print(in3  + " " );
             in1 = in2;
             in2 = in3;
         }
+        return in3;
     }
 
     public static int getNumberOfFibonacciR(int number) {
