@@ -1,3 +1,4 @@
+package lesson1;
 
 public class MyFirstThread implements Runnable {
     public int in;

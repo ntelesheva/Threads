@@ -1,9 +1,8 @@
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
+import lesson1.Main;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
-import java.math.BigInteger;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

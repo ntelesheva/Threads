@@ -1,3 +1,5 @@
+package lesson1;
+
 import java.math.BigInteger;
 import java.util.stream.IntStream;
 
