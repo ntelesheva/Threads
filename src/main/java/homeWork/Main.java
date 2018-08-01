@@ -25,8 +25,7 @@ public class Main {
             shipsQ.add(ship);
         }
 
-        Execute executer = new Execute(5,port,shipsQ);
-        executer.execute();
+        Execute executor = new Execute(2,port,shipsQ);
+        executor.execute();
     }
 }
- v

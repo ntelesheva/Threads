@@ -29,12 +29,14 @@ public class Execute {
     public void execute() {
         while (true) {
             for (Ship ship : shipsQ) {
-
+                    int i = 0;
                 for (Pier pier : piers) {
                     if (pier.isFree()) {
+                        System.out.println("the pier is free");
                         pier.setShip(ship);
                         pier.start();
-                        System.out.println(); //TODO:
+                        System.out.println(Thread.currentThread().getName() + "["+i+"]->start"); //TODO:
+                        i++;
                     }
                 }
             }
