@@ -1,4 +1,5 @@
 #ignore git files
 target/
 *.iml
+*.xml
 .idea/ 
